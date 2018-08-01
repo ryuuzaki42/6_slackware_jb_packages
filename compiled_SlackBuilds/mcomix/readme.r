@@ -1,4 +1,4 @@
 
 ## Error "ImportError: cannot import name _getexif"
-    # reinstall 
+    # reinstall
 slackpkg reinstall python-pillow
