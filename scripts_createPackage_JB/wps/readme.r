@@ -1,6 +1,15 @@
-## Adicionar dicionários:
-http://sidserra.blogspot.com/2016/06/adicionando-um-dicionario-pt-br-ao-wps.html
-http://wps-community.org/download/dicts
 
-unzip pt_BR.zip
-mv pt_BR/ /opt/kingsoft/wps-office/office6/dicts/
+## Add dictionaries - as root:
+    # http://wps-community.org/download/dicts
+
+    ## unzip the dictionaries
+        unzip pt_BR.zip
+        unzip en_GB.zip
+
+    ## Move to spellcheck folder
+        mv pt_BR/ en_GB/ /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+
+    ## Set permission
+        chmod u=rx -R /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+
+    ## Open the WPS, in "Review", select "Spell Check" and "Select the Language"
